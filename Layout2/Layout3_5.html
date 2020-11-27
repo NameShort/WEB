@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{margin: 0; padding: 0 auto;}
+        body{background-color: #ede7f6;}
+        #wrap{width: 1200px; margin: 0 auto;}
+        #header{width: 100%; height: 100px; background-color: #d1c4e9;}
+        #banner{width: 100%; height: 400px; background-color: #b39ddb;}
+
+        #contain1{overflow: hidden;}
+        #contain1 .nav{float: left; width: 30%; height: 500px; background-color: #9575cd;}
+        #contain1 .article_right1{float: left; width: 70%; height: 250px; background-color: #7e57c2;}
+        #contain1 .article_right2{float: left; width: 70%; height: 250px; background-color: #673ab7;}
+
+        #contain2{overflow: hidden;}
+        #contain2 .article_box1{float: left; width: 33.333%; height: 300px; background-color: #5e35b1;}
+        #contain2 .article_box2{float: left; width: 33.333%; height: 300px; background-color: #512da8;}
+        #contain2 .article_box3{float: left; width: 33.333%; height: 300px; background-color: #4527a0;}
+
+        #contain3{overflow: hidden; background-color: #9575cd; padding: 5%;}
+        #contain3 .article_smallbox1{float: left; width: 23%; height: 200px; margin: 1%; background-color: #4527a0; border-radius: 10%;}
+        #contain3 .article_smallbox2{float: left; width: 23%; height: 200px; margin: 1%; background-color: #4527a0; border-radius: 10%;}
+        #contain3 .article_smallbox3{float: left; width: 23%; height: 200px; margin: 1%; background-color: #4527a0; border-radius: 10%;}
+        #contain3 .article_smallbox4{float: left; width: 23%; height: 200px; margin: 1%; background-color: #4527a0; border-radius: 10%;}
+
+        #footer{width: 100%; height: 100px; background-color: #b388ff;}
+
+        /*화면 너비 0 ~ 1200*/
+        @media(max-width: 1220px){
+
+            #wrap{width: 100%;}
+            #contain2 .article_box1{width: 50%;}
+            #contain2 .article_box2{width: 50%;}
+            #contain2 .article_box3{display: none;}
+
+            #contain3 .article_smallbox1{width: 31.333%;}
+            #contain3 .article_smallbox2{width: 31.333%;}
+            #contain3 .article_smallbox3{width: 31.333%;}
+            #contain3 .article_smallbox4{display: none;}
+        }
+        /*화면 너비 0 ~ 768*/
+        @media(max-width: 768px){
+
+            #contain2 .article_box1{width: 100%;}
+            #contain2 .article_box2{width: 100%;}
+        }
+        /*화면 너비 0 ~ 768*/
+        @media(max-width: 768px){
+
+            #contain1 .nav{width: 100%; height: 200px;}
+            #contain1 .article_right1{width: 100%; height: 300px;}
+            #contain1 .article_right2{width: 100%; height: 300px;}
+
+            #contain3 .article_smallbox1{width: 100%;}
+            #contain3 .article_smallbox2{width: 100%;}
+            #contain3 .article_smallbox3{width: 100%;}
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header"></header>
+        <section id="banner"></section>
+        <section id="contain1">
+            <nav class="nav"></nav>
+            <article class="article_right1"></article>
+            <article class="article_right2"></article>
+        </section>
+        <section id="contain2">
+            <article class="article_box1"></article>
+            <article class="article_box2"></article>
+            <article class="article_box3"></article>
+        </section>
+        <section id="contain3">
+            <article class="article_smallbox1"></article>
+            <article class="article_smallbox2"></article>
+            <article class="article_smallbox3"></article>
+            <article class="article_smallbox4"></article>
+        </section>
+        <footer id="footer"></footer>
+    </div>
+</body>
+</html>
