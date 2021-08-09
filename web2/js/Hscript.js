@@ -26,7 +26,7 @@ $('.lightbox').lightGallery({
 });
 
 //이미지 슬라이더
-$(".slider").slick({
+$(".slider").slideToggle({
     dots: true,
     autoplay: true,
     autoplaySpeed: 3000,

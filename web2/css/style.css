@@ -65,7 +65,7 @@ body{background: url(../img/header_bg.jpg) repeat-x center top;}
     border-radius: 50%; 
     width: 65px; height: 65px; 
     display: inline-block; 
-    font-size: 35px; line-height: 60px; 
+    font-size: 35px; line-height: 65px; 
     transition: all 0.3s ease;
 }
 .header .header_icon li a span{
